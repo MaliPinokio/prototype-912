@@ -52,7 +52,7 @@ class UTCChanelName(SimpleCog):
             time = datetime.datetime.utcnow()
             time_s = 'Server time(UTC): ' + time.strftime("%H:%M")
             for channel in channels:
-                if time.minute % channel.update_rate:
+                if time.minute % channel.update_rate == 0:
                     discord_channel = self.client\
                         .get_channel(channel.channel_id)
                     if discord_channel:
