@@ -42,6 +42,8 @@ class UTCChanelName(SimpleCog):
             self.utc_named_channel_dao.add_channel(
                 channel_id, update_rate
             )
+            await self.client.reply(
+                ctx, 'UTC named channel has been set successfully', None, True)
 
     async def channel_update_loop(self):
         while True:
