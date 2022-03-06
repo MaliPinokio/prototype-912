@@ -1,2 +1,2 @@
 # prototype-912
-A Discord bot
+A DIscord bot
